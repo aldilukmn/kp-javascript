@@ -116,7 +116,6 @@ function sisi(value) {
 
 // console.log(minMax(array));
 
-
 // function vokal(value) {
 //     var result = {
 //         a : 0,
@@ -144,7 +143,6 @@ function sisi(value) {
 // }
 
 // console.log(vokal("makan nasi goreng"))
-
 
 // function maxAvg(value) {
 //     var result = [];
@@ -183,9 +181,7 @@ function sisi(value) {
 //     [7, 8, 12, 10, 5],
 // ]
 
-
 // console.log(maxAvg(array));
-
 
 // var x = 'abc' - 5;
 
@@ -200,6 +196,117 @@ function sisi(value) {
 // console.log(array[0] + array[1] + array[2])
 // x = 20
 
-console.log(x);
+// console.log(x);
 
-var x = 10;
+// var x = 10;
+
+// var arr = [];
+// var newArr = [];
+// var num = 1;
+// var whileArr = [];
+// for (var i = 1; i <= 10; i++) {
+//   arr.push(i);
+//   newArr.push(i * 2);
+// }
+
+// while (num <= 10) {
+//   whileArr.unshift(num * 3);
+//   num++;
+// }
+
+// console.log(arr);
+// console.log(newArr);
+// console.log(whileArr);
+
+// for (var i = 1; i <= 5; i++) {
+//   var temp = '';
+//   var num = 1;
+//   while (num <= i) {
+//     temp += num;
+//     num++
+//   }
+
+//   var arr = temp.split('');
+//   var n = [];
+
+//   var newArr = arr.forEach(function(value) {
+//     n.push(value)
+//   });
+
+//   console.log(n);
+
+// }
+
+// var arr = [1, 2, 3, 4, 5];
+// var arr2 = [10, 9, 8, 7, 6];
+
+// var newArr =  arr.concat(arr2);
+
+// console.log(newArr.sort((a, b) => a-b));
+
+var murid = [
+  [1, "Vincent", 3.5],
+  [2, "Udin", 3.0],
+  [3, "Mamang", 2.1],
+];
+
+// 1. Vincent, IPK = 3.5, Lulus
+// 2. Udin, IPK = 3.0, Lulus
+// 3. Mamang, IPK = 2.1, Gagal
+// Syarat lulus IPK Minimum 3.0
+
+
+// for (var x = 0; x < murid.length; x++) {
+//   var temp = '';
+
+//   if (murid[x][2] >= 3) {
+//     temp = 'Lulus';
+//   } else {
+//     temp = 'Gagal';
+//   }
+//   console.log(x+1 + '. ' +murid[x][1] + ', IPK = ' + murid[x][2], temp);
+// }
+
+
+function kelulusan(value) {
+  for (var x = 0; x < value.length; x++) {
+    var temp = "";
+
+    if (value[x][2] >= 3.0) {
+      temp = "Lulus";
+    } else {
+      temp = "Gagal";
+    }
+    console.log(`${x + 1}. ${value[x][1]}, IPK = ${value[x][2]}, ${temp}`);
+  }
+}
+
+// kelulusan(murid);
+
+
+// function ganjilGenap(value) {
+//   if (value % 2 === 0) {
+//     console.log(value + " adalah termasuk bilangan genap")
+//   } else {
+//     console.log(value + "termasuk bilangan ganjil")
+//   }
+// }
+
+// ganjilGenap(6);
+
+// function ganjilGenap(value) {
+// 	return (value % 2) === 0 ? 'Genap' :  'Ganjil';
+// }
+
+// console.log(ganjilGenap());
+
+function splitWords(value) {
+	return value.split(' ');
+}
+
+function words(value) {
+	var x = splitWords(value).length;
+	return "Jumlah kata ada: " + x;
+}
+
+console.log(words("halo gan saya sdas djsabdjwq dsajdbwq"));
