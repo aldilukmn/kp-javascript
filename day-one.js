@@ -250,11 +250,29 @@ var murid = [
   [3, "Mamang", 2.1],
 ];
 
+// const [vincent, udin, mamang] = murid;
+// const [no, nama, ipk] = [vincent, udin, mamang];
+
+// function kelulusan(value) {
+//   let temp = '';
+//   value.map(x => {
+//     if (x[2] >= 3.0) {
+//       temp = 'Lulus';
+//     } else {
+//       temp = 'Gagal'
+//     }
+//     console.log (`${x[0]}. ${x[1]}, IPK = ${[2]}, ${temp}`);
+//   })
+// }
+
+// kelulusan(murid);
+
+// console.log(vincent);
+
 // 1. Vincent, IPK = 3.5, Lulus
 // 2. Udin, IPK = 3.0, Lulus
 // 3. Mamang, IPK = 2.1, Gagal
 // Syarat lulus IPK Minimum 3.0
-
 
 // for (var x = 0; x < murid.length; x++) {
 //   var temp = '';
@@ -267,22 +285,20 @@ var murid = [
 //   console.log(x+1 + '. ' +murid[x][1] + ', IPK = ' + murid[x][2], temp);
 // }
 
+// function kelulusan(value) {
+//   for (var x = 0; x < value.length; x++) {
+//     var temp = "";
 
-function kelulusan(value) {
-  for (var x = 0; x < value.length; x++) {
-    var temp = "";
-
-    if (value[x][2] >= 3.0) {
-      temp = "Lulus";
-    } else {
-      temp = "Gagal";
-    }
-    console.log(`${x + 1}. ${value[x][1]}, IPK = ${value[x][2]}, ${temp}`);
-  }
-}
+//     if (value[x][2] >= 3.0) {
+//       temp = "Lulus";
+//     } else {
+//       temp = "Gagal";
+//     }
+//     console.log(`${x + 1}. ${value[x][1]}, IPK = ${value[x][2]}, ${temp}`);
+//   }
+// }
 
 // kelulusan(murid);
-
 
 // function ganjilGenap(value) {
 //   if (value % 2 === 0) {
@@ -300,13 +316,283 @@ function kelulusan(value) {
 
 // console.log(ganjilGenap());
 
-function splitWords(value) {
-	return value.split(' ');
-}
+// function splitWords(value) {
+// 	return value.split(' ');
+// }
 
-function words(value) {
-	var x = splitWords(value).length;
-	return "Jumlah kata ada: " + x;
-}
+// function words(value) {
+// 	var x = splitWords(value).length;
+// 	return "Jumlah kata ada: " + x;
+// }
 
-console.log(words("halo gan saya sdas djsabdjwq dsajdbwq"));
+// console.log(words("halo gan saya sdas djsabdjwq dsajdbwq"));
+
+// function checkWord(values) {
+//   let temp = 0;
+//   for (const val of values) {
+//     if (val === 'a') {
+//       temp++;
+//     }
+//   }
+//   return `Kata ini memiliki jumlah huruf a sebanyak: ${temp}`;
+// }
+
+// console.log(checkWord("aldi lukman aa"))
+
+// const value = a => b => c => a * b * c;
+
+// const valueA = value(2);
+// const valueB = valueA(2);
+// console.log(valueB(3))
+
+// const {name, manufacture, topSpeed} = {topSpeed: '180kmph', name: 'Civic', manufacture: 'Honda'};
+
+// console.log(topSpeed);
+
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+// }
+
+// let person_one = new Person('Aldi', 24);
+// console.log(person_one.name);
+
+// let randomNumber = Math.floor(Math.random() * 100);
+
+// console.log(randomNumber);
+
+// class Person {
+//   constructor(name, age, gender) {
+//     this.name = name;
+//     this.age = age;
+//     this.gender = gender;
+//   }
+
+//   get getName() {
+//     return ((this.gender === 'L' ? 'Halo Tuan, ' : 'Halo Nyonya, ') + 'Selamat datang di Super Market ' + this.name);
+//   }
+// }
+
+// const person_one = new Person('Nira', 24, 'P');
+// const person_two = new Person('Budi', 34, 'L');
+// console.log(person_one.getName)
+// console.log(person_two.getName)
+
+// const obj = [
+//   {
+//     name: 'aldi',
+//     age: 24,
+//   },
+//   {
+//     name: 'intan',
+//     age: 24,
+//   }
+// ]
+
+// obj.map(x => {
+//   console.log(x);
+// })
+
+// obj.forEach(x => {
+//   console.log(x)
+// });
+
+// for ( x of obj ) {
+//   console.log(x)
+// }
+
+// for ( x in obj ) {
+//   console.log(obj[x])
+// }
+
+// let buah = ['durian', 7500, true];
+// let newBuah = {}
+
+// function obj(value) {
+//   newBuah.name = value[0];
+//   newBuah.price = value[1];
+//   newBuah.yummy = value[2];
+//   return newBuah;
+// }
+
+// console.log(obj(buah).name);
+
+// const person = {
+//   name: 'caca',
+//   weight: 45,
+//   height: 155,
+//   hobbies: ['nonton', 'makan'],
+//   sebutkanHobby() {
+//     for (x in this.hobbies) {
+//     return  `
+//      1. ${this.hobbies[x]}
+//      `
+//     }
+//   }
+// }
+
+// var foods = [
+//   {
+//     name: 'Nasi Goreng',
+//     origin: 'Indonesia',
+//   },
+//   {
+//     name: 'Sushi',
+//     origin: 'Japan',
+//   },
+//   {
+//     name: 'Steak',
+//     origin: 'Western',
+//   }
+// ]
+
+// var names = foods.map(({name}) => name);
+
+// console.log(names[0]);
+
+// name, type, price
+// var items = [
+//   ['Asus', 'Laptop', 7500000],
+//   ['Dell', 'Laptop', 5500000],
+//   ['Corsait', 'RAM', 70000],
+// ]
+
+// var temp = items.map((item) => {
+//   var [name, type, price] = item;
+//   return { name, type, price };
+// })
+
+// console.log(temp);
+
+// var students = [
+//   ["Charlie", "A", 87],
+//   ["Andre", "B", 77],
+//   ["Berno", "A", 75],
+//   ["Andi", "B", 81],
+//   ["Ella", "B", 74],
+// ];
+
+// var result = {
+//   name: [],
+// };
+
+// function newObj(value) {
+//   for (var i = 0; i < value.length; i++) {
+//     result.name.push(value[i][0]);
+//   }
+// }
+
+// newObj(students);
+// console.log(result);
+
+// var objStudents = students.map(([name, className, score]) => {
+//   return {
+//     name,
+//     class: className,
+//     score,
+//   }
+// })
+
+// console.log(objStudents);
+
+
+
+// var result = {};
+
+// students.forEach(([name, className, score]) => {
+//   if (!result[className]) {
+//     result[className] = []
+//   }
+
+//   result[className].push({ name, class: className, score})
+// })
+
+// console.log(result);
+
+// var result = {
+//   A: [],
+//   B: [],
+// }
+
+// students.forEach(([ name, className, score]) => {
+//   result[className].push({ name, class: className, score});
+// })
+
+// console.log(result);
+
+// var filterA = students.filter(([name, className, score]) => className === 'A');
+// var filterB = students.filter(([name, className, score]) => className === 'B');
+
+// var result = {
+//   A: filterA,
+//   B: filterB,
+// }
+
+// console.log(result);
+
+
+// class Person {
+//   #name
+//   constructor(name, age) {
+//     this.#name = name;
+//     this.age = age;
+//   }
+
+//   get getName() {
+//     return this.#name;
+//   }
+// }
+
+// const person_one = new Person('aldi', 24);
+// console.log(person_one);
+
+// class Ongkir {
+//   #pajak;
+//   constructor(weight) {
+//     this.#pajak = 2000;
+//     this.biaya = this.#price(weight);
+//   }
+
+//   #price(weight) {
+//     return weight * 1000
+//   }
+
+//   get totalOngkir() {
+//     return this.biaya + this.#pajak;
+//   }
+// }
+
+// const ongkir = new Ongkir(10);
+// console.log(ongkir.totalOngkir);
+// ongkir.pajak = 2000;
+// console.log(ongkir.totalOngkir);
+
+// class People {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     this.job = 'Jobless';
+//   }
+
+//   get getJob() {
+//     return this.job;
+//   }
+// }
+
+// class Job extends People {
+//   constructor(name, age, job) {
+//     super(name, age);
+//     this.job = job;
+//   }
+// }
+
+// const people_one = new People('Aldi', 24);
+// const people_two = new Job('Aldi', 24, 'Software Engineer');
+// console.log(people_one.getJob);
+// console.log(people_two.getJob);
+
+const arrNum = [1, 6, 3, 5, 6, 2, 10, 54, 3, 23];
+
+console.log(arrNum.sort((a, b) => b - a))
