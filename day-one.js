@@ -497,8 +497,6 @@ var murid = [
 
 // console.log(objStudents);
 
-
-
 // var result = {};
 
 // students.forEach(([name, className, score]) => {
@@ -531,7 +529,6 @@ var murid = [
 // }
 
 // console.log(result);
-
 
 // class Person {
 //   #name
@@ -593,6 +590,75 @@ var murid = [
 // console.log(people_one.getJob);
 // console.log(people_two.getJob);
 
-const arrNum = [1, 6, 3, 5, 6, 2, 10, 54, 3, 23];
+// const arrNum = [1, 6, 3, 5, 6, 2, 10, 54, 3, 23];
 
-console.log(arrNum.sort((a, b) => b - a))
+// console.log(arrNum.sort((a, b) => b - a))
+
+// const callback = () => {
+//   console.log('Hello World');
+// }
+
+// setTimeout(callback, 0);
+// console.log(2);
+// console.log(5)
+
+// Call stack
+
+// function addition(a, b) {
+//   return a + b;
+// }
+
+// function call(n) {
+//   return addition(n, n);
+// }
+
+// function callStack(n) {
+//   var x = call(n);
+//   console.log(x);
+// }
+
+// callStack(20);
+
+// const resource = 'https://jsonplaceholder.typicode.com/todos';
+
+// const getResource = 'https://jsonplaceholder.typicode.com/todos/201';
+
+// const options = {
+//   method: 'POST',
+//   body: JSON.stringify({
+//     userId: 3,
+//     title: 'Belajar JavaScript',
+//     completed: true,
+//   })
+// };
+
+// const getOptions = {method: 'GET'};
+
+// fetch(getResource, getOptions)
+// .then(data => data.json())
+// .then(result => console.log(result));
+
+// async function getData() {
+//   try {
+//     const resource = "https://jsonplaceholder.typicode.com/tod";
+//     const options = { method: "GET" };
+//     const response = await fetch(resource, options);
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log("terjadi error", error);
+//   }
+// }
+
+// getData();
+
+
+// const fs = require('fs');
+
+// let data = fs.readFileSync('./data.json');
+// let result = JSON.parse(data);
+
+
+// console.log(result);
+
+console.log(null === false);
